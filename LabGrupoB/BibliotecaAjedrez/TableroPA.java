@@ -1,0 +1,1 @@
+import graphics.*; public class TableroPA{    public static void main(String[] args){        Picture patron = Picture.alfil().alLado(Picture.peon());        patron = patron.encima(patron.voltearV());        Picture tablero = patron.repetirH(2).repetirV(2);        Graphics g = new Graphics(tablero);        g.print();    }}
